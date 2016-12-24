@@ -41,31 +41,38 @@
 
 - (IBAction)btnLogin:(id)sender {
     // read collection.json file
-    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"collection" ofType:@"json"];
-    NSData *data = [NSData dataWithContentsOfFile:filePath];
     
-    // put as dictionary
-    NSMutableDictionary *jsonData = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
-    NSMutableArray *included = [jsonData objectForKey:@"included"];
-
-    for (int i=0; i < [included count]; i++) {
-        NSMutableDictionary *includedDict = [included objectAtIndex:i];
-        NSString *type = [includedDict objectForKey:@"type"];
+    if ([txtUserName isEqual: @""]) {
+        [self alertStatus:@"Please input your mobile number" :@"Error"];
         
-        if ([type isEqualToString:@"services"]) {
-            NSMutableDictionary *attributes = [includedDict objectForKey:@"attributes"];
-            NSString *msn = [attributes objectForKey:@"msn"];
+    }
+    else{
+        NSString *filePath = [[NSBundle mainBundle] pathForResource:@"collection" ofType:@"json"];
+        NSData *data = [NSData dataWithContentsOfFile:filePath];
+        
+        // put as dictionary
+        NSMutableDictionary *jsonData = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
+        NSMutableArray *included = [jsonData objectForKey:@"included"];
+        
+        for (int i=0; i < [included count]; i++) {
+            NSMutableDictionary *includedDict = [included objectAtIndex:i];
+            NSString *type = [includedDict objectForKey:@"type"];
             
-            if ([txtUserName.text isEqualToString:msn]) {
-                SplashViewController *splashVC = [[SplashViewController alloc] initWithNibName:@"SplashViewController" bundle:[NSBundle mainBundle]];
-                splashVC.jsonData = jsonData;
-                [self.navigationController setNavigationBarHidden:YES];
-                [self.navigationController pushViewController:splashVC animated:YES];
+            if ([type isEqualToString:@"services"]) {
+                NSMutableDictionary *attributes = [includedDict objectForKey:@"attributes"];
+                NSString *msn = [attributes objectForKey:@"msn"];
+                
+                if ([txtUserName.text isEqualToString:msn]) {
+                    SplashViewController *splashVC = [[SplashViewController alloc] initWithNibName:@"SplashViewController" bundle:[NSBundle mainBundle]];
+                    splashVC.jsonData = jsonData;
+                    [self.navigationController setNavigationBarHidden:YES];
+                    [self.navigationController pushViewController:splashVC animated:YES];
+                }
+                else{
+                    [self alertStatus:@"Mobile Number not found" :@"Invalid"];
+                }
+                break;
             }
-            else{
-                [self alertStatus:@"Mobile Number not found" :@"Invalid"];
-            }
-            break;
         }
     }
 }
