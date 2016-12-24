@@ -1,0 +1,360 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		147C589E1E0EB163004A3096 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 147C589D1E0EB163004A3096 /* main.m */; };
+		147C58A11E0EB163004A3096 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 147C58A01E0EB163004A3096 /* AppDelegate.m */; };
+		147C58A91E0EB163004A3096 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 147C58A81E0EB163004A3096 /* Assets.xcassets */; };
+		147C58AC1E0EB163004A3096 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 147C58AA1E0EB163004A3096 /* LaunchScreen.storyboard */; };
+		147C58B61E0EB1DB004A3096 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 147C58B41E0EB1DB004A3096 /* LoginViewController.m */; };
+		147C58B71E0EB1DB004A3096 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 147C58B51E0EB1DB004A3096 /* LoginViewController.xib */; };
+		147C58BB1E0EB28D004A3096 /* collection.json in Resources */ = {isa = PBXBuildFile; fileRef = 147C58B81E0EB28D004A3096 /* collection.json */; };
+		147C58BC1E0EB28E004A3096 /* amaysim-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 147C58BA1E0EB28D004A3096 /* amaysim-logo.png */; };
+		147C58EA1E0EBA0F004A3096 /* buttonBG.png in Resources */ = {isa = PBXBuildFile; fileRef = 147C58E91E0EBA0F004A3096 /* buttonBG.png */; };
+		147C58EE1E0EBFD9004A3096 /* SplashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 147C58EC1E0EBFD9004A3096 /* SplashViewController.m */; };
+		147C58EF1E0EBFD9004A3096 /* SplashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 147C58ED1E0EBFD9004A3096 /* SplashViewController.xib */; };
+		147C58F81E0EC266004A3096 /* amaysimSplashBG.png in Resources */ = {isa = PBXBuildFile; fileRef = 147C58F71E0EC266004A3096 /* amaysimSplashBG.png */; };
+		147C58FC1E0EC5CE004A3096 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 147C58FA1E0EC5CE004A3096 /* MainViewController.m */; };
+		147C58FD1E0EC5CE004A3096 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 147C58FB1E0EC5CE004A3096 /* MainViewController.xib */; };
+		147C58FF1E0EF7E3004A3096 /* usersIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 147C58FE1E0EF7E3004A3096 /* usersIcon.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		147C58991E0EB163004A3096 /* amaysim.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = amaysim.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		147C589D1E0EB163004A3096 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		147C589F1E0EB163004A3096 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		147C58A01E0EB163004A3096 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		147C58A81E0EB163004A3096 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		147C58AB1E0EB163004A3096 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		147C58AD1E0EB163004A3096 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		147C58B31E0EB1DB004A3096 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		147C58B41E0EB1DB004A3096 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		147C58B51E0EB1DB004A3096 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		147C58B81E0EB28D004A3096 /* collection.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = collection.json; sourceTree = "<group>"; };
+		147C58BA1E0EB28D004A3096 /* amaysim-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "amaysim-logo.png"; sourceTree = "<group>"; };
+		147C58E91E0EBA0F004A3096 /* buttonBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buttonBG.png; sourceTree = "<group>"; };
+		147C58EB1E0EBFD9004A3096 /* SplashViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SplashViewController.h; sourceTree = "<group>"; };
+		147C58EC1E0EBFD9004A3096 /* SplashViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SplashViewController.m; sourceTree = "<group>"; };
+		147C58ED1E0EBFD9004A3096 /* SplashViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SplashViewController.xib; sourceTree = "<group>"; };
+		147C58F71E0EC266004A3096 /* amaysimSplashBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = amaysimSplashBG.png; sourceTree = "<group>"; };
+		147C58F91E0EC5CE004A3096 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		147C58FA1E0EC5CE004A3096 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		147C58FB1E0EC5CE004A3096 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		147C58FE1E0EF7E3004A3096 /* usersIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = usersIcon.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		147C58961E0EB162004A3096 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		147C58901E0EB162004A3096 = {
+			isa = PBXGroup;
+			children = (
+				147C589B1E0EB163004A3096 /* amaysim */,
+				147C589A1E0EB163004A3096 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		147C589A1E0EB163004A3096 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				147C58991E0EB163004A3096 /* amaysim.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		147C589B1E0EB163004A3096 /* amaysim */ = {
+			isa = PBXGroup;
+			children = (
+				147C58B31E0EB1DB004A3096 /* LoginViewController.h */,
+				147C58B41E0EB1DB004A3096 /* LoginViewController.m */,
+				147C58B51E0EB1DB004A3096 /* LoginViewController.xib */,
+				147C58EB1E0EBFD9004A3096 /* SplashViewController.h */,
+				147C58EC1E0EBFD9004A3096 /* SplashViewController.m */,
+				147C58ED1E0EBFD9004A3096 /* SplashViewController.xib */,
+				147C58F91E0EC5CE004A3096 /* MainViewController.h */,
+				147C58FA1E0EC5CE004A3096 /* MainViewController.m */,
+				147C58FB1E0EC5CE004A3096 /* MainViewController.xib */,
+				147C58B81E0EB28D004A3096 /* collection.json */,
+				147C58B91E0EB28D004A3096 /* images */,
+				147C589F1E0EB163004A3096 /* AppDelegate.h */,
+				147C58A01E0EB163004A3096 /* AppDelegate.m */,
+				147C58A81E0EB163004A3096 /* Assets.xcassets */,
+				147C58AA1E0EB163004A3096 /* LaunchScreen.storyboard */,
+				147C58AD1E0EB163004A3096 /* Info.plist */,
+				147C589C1E0EB163004A3096 /* Supporting Files */,
+			);
+			path = amaysim;
+			sourceTree = "<group>";
+		};
+		147C589C1E0EB163004A3096 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				147C589D1E0EB163004A3096 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		147C58B91E0EB28D004A3096 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				147C58FE1E0EF7E3004A3096 /* usersIcon.png */,
+				147C58F71E0EC266004A3096 /* amaysimSplashBG.png */,
+				147C58E91E0EBA0F004A3096 /* buttonBG.png */,
+				147C58BA1E0EB28D004A3096 /* amaysim-logo.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		147C58981E0EB162004A3096 /* amaysim */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 147C58B01E0EB163004A3096 /* Build configuration list for PBXNativeTarget "amaysim" */;
+			buildPhases = (
+				147C58951E0EB162004A3096 /* Sources */,
+				147C58961E0EB162004A3096 /* Frameworks */,
+				147C58971E0EB162004A3096 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = amaysim;
+			productName = amaysim;
+			productReference = 147C58991E0EB163004A3096 /* amaysim.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		147C58911E0EB162004A3096 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				TargetAttributes = {
+					147C58981E0EB162004A3096 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = 147C58941E0EB162004A3096 /* Build configuration list for PBXProject "amaysim" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 147C58901E0EB162004A3096;
+			productRefGroup = 147C589A1E0EB163004A3096 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				147C58981E0EB162004A3096 /* amaysim */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		147C58971E0EB162004A3096 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				147C58EA1E0EBA0F004A3096 /* buttonBG.png in Resources */,
+				147C58B71E0EB1DB004A3096 /* LoginViewController.xib in Resources */,
+				147C58F81E0EC266004A3096 /* amaysimSplashBG.png in Resources */,
+				147C58BC1E0EB28E004A3096 /* amaysim-logo.png in Resources */,
+				147C58FD1E0EC5CE004A3096 /* MainViewController.xib in Resources */,
+				147C58EF1E0EBFD9004A3096 /* SplashViewController.xib in Resources */,
+				147C58AC1E0EB163004A3096 /* LaunchScreen.storyboard in Resources */,
+				147C58A91E0EB163004A3096 /* Assets.xcassets in Resources */,
+				147C58BB1E0EB28D004A3096 /* collection.json in Resources */,
+				147C58FF1E0EF7E3004A3096 /* usersIcon.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		147C58951E0EB162004A3096 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				147C58B61E0EB1DB004A3096 /* LoginViewController.m in Sources */,
+				147C58A11E0EB163004A3096 /* AppDelegate.m in Sources */,
+				147C589E1E0EB163004A3096 /* main.m in Sources */,
+				147C58FC1E0EC5CE004A3096 /* MainViewController.m in Sources */,
+				147C58EE1E0EBFD9004A3096 /* SplashViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		147C58AA1E0EB163004A3096 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				147C58AB1E0EB163004A3096 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		147C58AE1E0EB163004A3096 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		147C58AF1E0EB163004A3096 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		147C58B11E0EB163004A3096 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = amaysim/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ph.com.arnel.app.amaysim;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		147C58B21E0EB163004A3096 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = amaysim/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ph.com.arnel.app.amaysim;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		147C58941E0EB162004A3096 /* Build configuration list for PBXProject "amaysim" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				147C58AE1E0EB163004A3096 /* Debug */,
+				147C58AF1E0EB163004A3096 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		147C58B01E0EB163004A3096 /* Build configuration list for PBXNativeTarget "amaysim" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				147C58B11E0EB163004A3096 /* Debug */,
+				147C58B21E0EB163004A3096 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 147C58911E0EB162004A3096 /* Project object */;
+}
