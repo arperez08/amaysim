@@ -1,0 +1,2 @@
+# amaysim
+amaysim coding exam
