@@ -18,6 +18,8 @@
     IBOutlet UILabel *lblPrice;
     IBOutlet UILabel *lblUsage;
     IBOutlet UIProgressView *progressBar;
+    IBOutlet UIView *viewProgressHolder;
+
 
 
 }
@@ -29,6 +31,9 @@
 @property (strong, nonatomic) IBOutlet UILabel *lblPrice;
 @property (strong, nonatomic) IBOutlet UILabel *lblUsage;
 @property (strong, nonatomic) IBOutlet UIProgressView *progressBar;
+
+@property (strong, nonatomic) IBOutlet UIView *viewProgressHolder;
+
 
 - (IBAction)btnLogout:(id)sender;
 

@@ -8,13 +8,14 @@
 
 #import "MainViewController.h"
 #import "LoginViewController.h"
+#import "LDProgressView.h"
 
 @interface MainViewController ()
 
 @end
 
 @implementation MainViewController
-@synthesize jsonData,lblFullname,lblNumber,lblProductName,lblExpiry,lblPrice,lblUsage,progressBar;
+@synthesize jsonData,lblFullname,lblNumber,lblProductName,lblExpiry,lblPrice,lblUsage,progressBar,viewProgressHolder;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -53,8 +54,24 @@
             }
             lblUsage.text = [NSString stringWithFormat:@"Current Usage: %@",productBalance];
             
-            float progressMeasure = [productBalance floatValue] / 70000.00;
+            float progressMeasure = ([productBalance floatValue] / 70000.00);
             progressBar.progress = progressMeasure;
+            
+            CGRect screenBounds = [[UIScreen mainScreen] bounds];
+            LDProgressView *progressView = [[LDProgressView alloc] initWithFrame:CGRectMake(0, 0, screenBounds.size.width -screenBounds.size.width/15, 30)];
+            
+            progressView.color = [self colorFromHexString:@"#FF8F05"];
+            progressView.showText = @NO;
+            progressView.progress = progressMeasure;
+            progressView.borderRadius = @20;
+            progressView.animate = @NO;
+            progressView.showBackgroundInnerShadow = @NO;
+            progressView.showStroke = @NO;
+            //progressView.showBackground = @NO;
+            progressView.background = [UIColor lightGrayColor];
+            progressView.type = LDProgressSolid;
+            [viewProgressHolder addSubview:progressView];
+            
         }
         if ([type isEqualToString:@"products"]) {
             NSString *productName = [attributes objectForKey:@"name"];
@@ -64,6 +81,16 @@
         }
     }
 }
+
+
+- (UIColor *)colorFromHexString:(NSString *)hexString {
+    unsigned rgbValue = 0;
+    NSScanner *scanner = [NSScanner scannerWithString:hexString];
+    [scanner setScanLocation:1]; // bypass '#' character
+    [scanner scanHexInt:&rgbValue];
+    return [UIColor colorWithRed:((rgbValue & 0xFF0000) >> 16)/255.0 green:((rgbValue & 0xFF00) >> 8)/255.0 blue:(rgbValue & 0xFF)/255.0 alpha:1.0];
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

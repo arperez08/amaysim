@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		142174DA1E0F71DF00450DFF /* LDProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 142174D71E0F71DF00450DFF /* LDProgressView.m */; };
+		142174DB1E0F71DF00450DFF /* UIColor+RGBValues.m in Sources */ = {isa = PBXBuildFile; fileRef = 142174D91E0F71DF00450DFF /* UIColor+RGBValues.m */; };
+		142174DD1E0F761B00450DFF /* data_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 142174DC1E0F761B00450DFF /* data_icon.png */; };
 		147C589E1E0EB163004A3096 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 147C589D1E0EB163004A3096 /* main.m */; };
 		147C58A11E0EB163004A3096 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 147C58A01E0EB163004A3096 /* AppDelegate.m */; };
 		147C58A91E0EB163004A3096 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 147C58A81E0EB163004A3096 /* Assets.xcassets */; };
@@ -25,6 +28,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		142174D61E0F71DF00450DFF /* LDProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDProgressView.h; sourceTree = "<group>"; };
+		142174D71E0F71DF00450DFF /* LDProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDProgressView.m; sourceTree = "<group>"; };
+		142174D81E0F71DF00450DFF /* UIColor+RGBValues.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+RGBValues.h"; sourceTree = "<group>"; };
+		142174D91E0F71DF00450DFF /* UIColor+RGBValues.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+RGBValues.m"; sourceTree = "<group>"; };
+		142174DC1E0F761B00450DFF /* data_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = data_icon.png; sourceTree = "<group>"; };
 		147C58991E0EB163004A3096 /* amaysim.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = amaysim.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		147C589D1E0EB163004A3096 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		147C589F1E0EB163004A3096 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -59,6 +67,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		142174D41E0F71DF00450DFF /* ThirdParty */ = {
+			isa = PBXGroup;
+			children = (
+				142174D51E0F71DF00450DFF /* LDProgressView */,
+			);
+			path = ThirdParty;
+			sourceTree = "<group>";
+		};
+		142174D51E0F71DF00450DFF /* LDProgressView */ = {
+			isa = PBXGroup;
+			children = (
+				142174D61E0F71DF00450DFF /* LDProgressView.h */,
+				142174D71E0F71DF00450DFF /* LDProgressView.m */,
+				142174D81E0F71DF00450DFF /* UIColor+RGBValues.h */,
+				142174D91E0F71DF00450DFF /* UIColor+RGBValues.m */,
+			);
+			path = LDProgressView;
+			sourceTree = "<group>";
+		};
 		147C58901E0EB162004A3096 = {
 			isa = PBXGroup;
 			children = (
@@ -89,6 +116,7 @@
 				147C58FB1E0EC5CE004A3096 /* MainViewController.xib */,
 				147C58B81E0EB28D004A3096 /* collection.json */,
 				147C58B91E0EB28D004A3096 /* images */,
+				142174D41E0F71DF00450DFF /* ThirdParty */,
 				147C589F1E0EB163004A3096 /* AppDelegate.h */,
 				147C58A01E0EB163004A3096 /* AppDelegate.m */,
 				147C58A81E0EB163004A3096 /* Assets.xcassets */,
@@ -110,6 +138,7 @@
 		147C58B91E0EB28D004A3096 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				142174DC1E0F761B00450DFF /* data_icon.png */,
 				147C58FE1E0EF7E3004A3096 /* usersIcon.png */,
 				147C58F71E0EC266004A3096 /* amaysimSplashBG.png */,
 				147C58E91E0EBA0F004A3096 /* buttonBG.png */,
@@ -179,6 +208,7 @@
 				147C58B71E0EB1DB004A3096 /* LoginViewController.xib in Resources */,
 				147C58F81E0EC266004A3096 /* amaysimSplashBG.png in Resources */,
 				147C58BC1E0EB28E004A3096 /* amaysim-logo.png in Resources */,
+				142174DD1E0F761B00450DFF /* data_icon.png in Resources */,
 				147C58FD1E0EC5CE004A3096 /* MainViewController.xib in Resources */,
 				147C58EF1E0EBFD9004A3096 /* SplashViewController.xib in Resources */,
 				147C58AC1E0EB163004A3096 /* LaunchScreen.storyboard in Resources */,
@@ -195,11 +225,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				142174DB1E0F71DF00450DFF /* UIColor+RGBValues.m in Sources */,
 				147C58B61E0EB1DB004A3096 /* LoginViewController.m in Sources */,
 				147C58A11E0EB163004A3096 /* AppDelegate.m in Sources */,
 				147C589E1E0EB163004A3096 /* main.m in Sources */,
 				147C58FC1E0EC5CE004A3096 /* MainViewController.m in Sources */,
 				147C58EE1E0EBFD9004A3096 /* SplashViewController.m in Sources */,
+				142174DA1E0F71DF00450DFF /* LDProgressView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
